@@ -1,0 +1,6 @@
+.env
+venv
+.git
+test_client.py
+
+
