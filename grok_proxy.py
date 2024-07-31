@@ -19,9 +19,11 @@ class RequestModel(BaseModel):
     temperature: Optional[float] = 1.0
     max_tokens: Optional[int] = 1024
     top_p: Optional[float] = 1.0
+    top_k: Optional[int] = 40
     stream: bool = False
     messages: Optional[List[Message]] = None
     prompt: Optional[str] = None
+    
 
 class ResponseModel(BaseModel):
     response: str
